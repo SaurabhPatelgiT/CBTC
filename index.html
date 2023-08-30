@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/198b08f51b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo3.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#services"><b>Services</b></a></li>
+                <li><a href="#portfolio"><b>Portfolio</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <p><b>Web Developer</b</p>
+        <!-- <h1>Hi, I am <span>Saurabh Patel</span><br> from India</h1> -->
+        <h1>Hi, I am <span class="auto-type"></span></h1>
+        <!-- <h2>I am <span class="auto-type-2"></span></h2> -->
+    </div>
+</div>
+</div>
+<!-- -------------about ---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/image1.jpeg" >
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><b>
+                    I am an undergrad student pursuing B. Tech in Information Technology (2020-2024). 
+                    Currently, I am in the 4th Year ( 7th sem) of my engineering. 
+                    I am acquainted in the following programming languages- Java (HackerRank- 5⭐) and Codechef- 3 ⭐. 
+                    I am also skilled in Web Development with HTML, CSS , JavaScript and React.js.  </b></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links"  onclick="opentab('education')"><b>Education</b></p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span></li>
+                            <li><span>OOPS</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>Web Development</span></li>
+                            <!-- <li><span>UI/UX</span><br>Designing Web Interfaces</li> -->
+                           
+                            <!-- <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li><span>June 2021- October 2022</span><br>Xplorica - the tech club of FIEM</li>
+                            <li><span>Nov 2021 - May 2022</span><br>PrepBytes</li>
+                            <li><span>Dec 2021 - Aug 2022</span><br>Unacademy</li>
+                            <li><span>Dec 2021 - Nov 2022</span><br>Techfest, IIT Bombay</li>
+                            <li><span>Oct 2022 - Dec 2022</span><br>Ardent Computech Pvt. Ltd.</li>
+                            <li><span>Aug 2023 - Current</span><br>CipherByte Technologies</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="tab-contents"   id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Future Institute of Engineering and Management <br>- B.Tech in Information Technology (IT)</li>
+                            <li><span>2018 -2019</span><br>Calcutta Public School <br>- ISC Science</li>
+                            <li><span>2016-2017</span><br>MARIAN CO-EDUCATIONAL SCHOOL <br>- ICSE Science</li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- --------------services----------------- -->
+
+ <div id="services">
+    <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Magnam tempora, cupiditate perferendis eos accusamus totam nam dolor maiores vitae, assumenda quaerat. 
+                Voluptatem delectus harum tenetur itaque totam tempora nihil ex?</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Magnam tempora, cupiditate perferendis eos accusamus totam nam dolor maiores vitae, assumenda quaerat. 
+                Voluptatem delectus harum tenetur itaque totam tempora nihil ex?</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Magnam tempora, cupiditate perferendis eos accusamus totam nam dolor maiores vitae, assumenda quaerat. 
+                Voluptatem delectus harum tenetur itaque totam tempora nihil ex?</p>
+                <a href="#">Learn more</a>
+            </div>
+
+         </div>
+    </div>
+ </div>
+
+ <!-- -----------portfolio-------- -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg" alt="">
+                <div class="layer">
+                    <h3>Make In Green India</h3>
+                    <p>
+                   The aim of the project is to bring about a green revolution in our country India &make people acquainted and aware of the importance and use of ancientmedicinal plants which are instrumental in treating many fatal diseases.
+                        
+                    </p>
+                    <a href="https://saurabhpatelgit.github.io/makeingreenindia/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/amazon3.jpeg" alt="">
+                
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p> This is the clone of the e-commerce website Amazon.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img src="images/clock.png" alt="">
+
+                <div class="layer">
+                    <h3>Analog & Digital Clock</h3>
+                    <p> In this project the clock shows time in both analog and digital form.</p>
+                    <a href="https://saurabhpatelgit.github.io/analog-digital-clock/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+
+ <!-- --------------contact------------ -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> contact@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/SaurabhPatelgiT"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saurabh-patel-95368818b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                    <a href="images/sample_pdf.pdf" download class="btn btn2"><b>Download CV</b></a>
+
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2"><b>Submit</b></button>
+            </form>
+            <span id="msg"></span>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><b>Copyright </b><i class="fa-regular fa-copyright"></i> <b> 2023 All Rights Reserved by Saurabh Patel</b></p>
+    </div>
+ </div>
+
+ <!-- ----------------moving text------------ -->
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Saurabh Patel", "from India" , "a Web Developer !"],
+        
+        typeSpeed: 140,
+        backSpeed: 200,
+        loop: true
+    })
+  </script>
+
+
+
+ <!-- ----------------moving text------------ -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeXBIfJfhgTWTskrA8E8G913_bun8l9VafI0rKsH8vPdRciEzgby0is48xCX9ckO5ynw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
