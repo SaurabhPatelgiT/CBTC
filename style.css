@@ -84,7 +84,7 @@ nav ul li a:hover::after{
 
      
     /* transform: translate(1%, 1%); */
-    -webkit-text-stroke: 1.5px #f2efff;
+    -webkit-text-stroke: 1.5px #f06f06;
     color: transparent;
     /* background-image: linear-gradient(#f88f06, #1af806); */
     background-image: linear-gradient(#dd3004, #f88f06);
