@@ -86,11 +86,12 @@ nav ul li a:hover::after{
     /* transform: translate(1%, 1%); */
     -webkit-text-stroke: 1.5px #f2efff;
     color: transparent;
-    background-image: linear-gradient(#1af806, #c3e407);
+    /* background-image: linear-gradient(#f88f06, #1af806); */
+    background-image: linear-gradient(#dd3004, #f88f06);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: 280px 0 ;
-    animation: backcolor 5s linear infinite alternate;
+    background-position: 360px 0 ;
+    animation: backcolor 4s linear infinite alternate;
      /* -------animation------- */
 
 }
@@ -456,11 +457,12 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/user.png);
+        background-image: url(images/phone\ bck\ 1.jpeg);
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 110%;
+        /* font-size: 16px; */
+        font-size: 23px;
 
     }
     .header-text h1{
