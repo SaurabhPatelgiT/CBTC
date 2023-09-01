@@ -519,10 +519,13 @@ nav .fa-solid{
 
     /* ---later edits-- */
 
-.layer h3{
+.layer p{
     font-size: 7px;
 }
+ /* ---later edits-- */
 }
+
+
 #msg{
     color: #61b752;
     margin-top: -40px;
